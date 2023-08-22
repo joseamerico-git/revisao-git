@@ -4,7 +4,7 @@
 
 - GitHub --> Um servidor de Hospedagem, em que utiliza-se o Git.
 
-testando a plataforma e web editor
+
 
 🔗 # **Tornando a pasta atual em repositório git**
 ```
@@ -110,6 +110,34 @@ git reflog
 
 
 # Enviando e baixando alterações do GitHub
+git add .
+git remote add origin URL
+git status 
+git log
+git commit -m"desccommit"
+git push -u origin main (-u abreviacao de upstrean)
+
+## Após as alterções serem feitas no repositório remoto precisamos fazer um git pull no repo local para atualizar os arquivos
+
+
+git pull 
+(puxar as alterações realizadas atualizando meu repositório)
+
+## Trabalhando com Braches
+
+Braches são ramificações do projeto. 
+Criada uma brach incia-se uma nova brcah que aponta para o mesmo commit da brach de onde foi criada.
+
+
+## Criando uma brach
+
+git log 
+
+para ver a brach e o commit
+atual
+
+
+
 
 
 
