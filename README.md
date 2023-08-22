@@ -158,6 +158,15 @@ git -d nome-brach-a-deletar
 
 ## Ver convensões de nomeação padrão de breches e commits
 
+## ALGUMAS SITUAÇÕES QUE POSSAM OCORRER
+
+ - CONFLITOS DE MERGE
+ Existem alterações no repositório remoto que ainda não estão no repositório local
+
+ git pull mostrará o conflito
+
+ nos cabe decidir qual alteração permanece vigente.
+
 
 
 
