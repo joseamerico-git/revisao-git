@@ -136,6 +136,32 @@ git log
 para ver a brach e o commit
 atual
 
+git checkout -B nome-brach
+
+## Voltar para a brech anterior
+
+git checkout nome-brach
+
+## Listando as brachs
+
+git brach -v
+
+## Mesclando as braches
+
+git merge nome-brech
+
+## Após mesclar as breaches
+
+git brach -v
+
+git -d nome-brach-a-deletar
+
+## Ver convensões de nomeação padrão de breches e commits
+
+
+
+
+
 
 
 
