@@ -4,7 +4,7 @@
 
 - GitHub --> Um servidor de Hospedagem, em que utiliza-se o Git.
 
-testando a plataforma
+testando a plataforma e web editor
 
 🔗 # **Tornando a pasta atual em repositório git**
 ```
