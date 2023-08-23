@@ -167,6 +167,8 @@ git -d nome-brach-a-deletar
 
  nos cabe decidir qual alteração permanece vigente.
 
+ 
+
 
 
 
