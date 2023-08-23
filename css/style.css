@@ -1,0 +1,25 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+#titulo{
+    color: blue;
+
+}
+.subtitle{
+    color: orange;
+}
+
+.post_title{
+    color: rgb(27, 11, 110);
+    font-size: 16px;
+    font-style: italic;
+}
+
+.post{
+    background-color: rgb(200, 200, 197);
+    padding:10px;
+    border:3px solid black;
+    margin: 10px;
+}
