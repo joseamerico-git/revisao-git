@@ -108,6 +108,172 @@ No CSS
  ```
 
  # mdn para estudar
+
+  - boras solid | drashed | dotted
+
+ - Como separar a estilização de cada lado
+
+    top right botton left
+    ```
+    .post{
+        border-top: solid 1px green;
+        border-right: dotted 3px yellow;
+        border-botton: drashed 4px pink;
+        border-left: dotted 2px red;
+
+        ou 
+
+        border: 3px solid #44444;
+        
+        ou 
+
+        border-with:3px;
+        border-color:pink;
+        border-style:drashed;
+    }
+
+    # Mais específicos
+
+        .post{
+            border-top-right: 3px;
+            border-top-color:#34333;
+            border-top-style:drashed;    
+
+
+        }
+    # Border radius    
+
+        .post{
+            border-radius:10px;      --> quando definimos um valor todos os cantos.
+            border-radius:50%;       --> Para tornar um círculo colocar 50%;
+            border-radius:10% 20%;
+            border-radius:10% 20% 15% 22%; 
+        }
+
+    ```
+    ## Exercício
+
+    Alinhar espaçamentos 
+    texto com conteúdo 
+    espaçamentos
+
+    # zerar margin sempre na mesma direção é uma boa prática
+
+    ## O HTML5 foi criado para compartilhar textos.
+
+    - web safe fontes (já estão presentes nos dispositivos)
+
+    ```
+    #title{
+        font-family:Verdana;
+    }
+
+    .post-title{
+        duas fontes, caso uma não funcione a segunda entra como beckup.
+        font-family: Verdana, Arial;
+        font-size:15px; --> altera tamanho das fontes;
+        font-style: normal;
+        font-style: italic; 
+        
+        -->Observação: Verificar se a fonte tem suporte a itálico para o navegador não destorcer e ficar feio.
+
+        font-weight:normal; --> altera o peso do texto;
+        font-weight: bold; -->negrito;
+
+        text-transform: upercase; --> transorma o texto entre maiusculo em minusculo.
+        text-transform: lowercase; 
+        
+        --> o valor uppercase (maiusculo) 
+        --> o valor lowercase (minusculo)
+        --> o valor captalize (primeiras letras de cada palavra em maiusculo)
+
+        text-decoration: underline;    --> linha abaixo da palavra
+        text-decoration: overline;     --> linha acima da palavra
+        text-decoration: line-thought; --> linha ao centro cortando a palavra 
+
+
+    }
+    
+    
+    ```
+
+    ## Estilizando Listas
+
+    Existem listas ordenadas e não ordenadas
+
+    ```
+      ul{
+            list-style-type:square;  -->LISTA NÃO ORDENADA ALTERANDO O SIMBOLO PARA QUADRADO
+            list-style-type: none;
+        } 
+     
+     ol{
+         list-style-type:upper-roman; -->LISTA ORDENADA ALTERANDO MARCADOR DA LISTA PARA ALGARISMO ROMANO
+
+       }
+     ul{
+        list-style-type:"\1F44D"; -->LISTA NÃO ORDENADA ALTERANDO MARCADOR PARA UM SIMBOLO.
+       }
+
+    ul{
+
+        list-style-image: url("imagem.png");
+    }
+    ```
+
+    Exercício
+
+    alterando propriedades
+
+    O site funciona como uma cascata
+
+    podemos seguir o fluxo
+    ex:
+    contacts-list tem uma lista e tem o link
+
+    ```
+        .contacts-list li a {
+            color: blue;
+        }
+    
+    ```
+
+    ## Dimensão e Alinhamentos
+
+    width
+    height
+
+
+    - Max-height
+    - Max-width
+    - Margin
+    - Text-align
+
+    ## Exercício
+
+    Delimitar as dimensões dos nossos elementos e alinhar nosso conteúdo.
+
+    Delimitando o body em um valor menor que a imagem e a imagem vazar 
+
+    ```
+        .post_image{
+         margin-bottom: 15px;
+        width: 100%; --> a imagem respeitará o elemento que está de fora.
+}
+    
+    ```
+
+# Ineressante alinhar ao centro, porém cadas dispositivo tem telas de tamanhos diferentes então:
+body{
+
+    margin:auto;
+}
+
+esse valor cria um espaçamento em ambos os lados.
+
+
+
+
   
 
 
