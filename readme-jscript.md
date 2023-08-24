@@ -6,7 +6,7 @@ Desenvolvedora Front-end
 
 # O que é JavaScript 
 
-    - É uma linguagem de programação de alto nível que integram apps e páginas web.
+     É uma linguagem de programação de alto nível que integram apps e páginas web.
       Uma das linguagens mais utilizadas no mundo do desenvolvimento.
       alto nível  --> próximo a linguagem humana
       baixo nível --> próximo da linguagem de máquina bytecodes..
