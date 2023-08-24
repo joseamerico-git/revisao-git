@@ -30,7 +30,7 @@ a tag #<meta >
 
 <img src="" alt=""> alt="descrição" o alt é altamente recomendado quando a foto não carregar vai aparecer a descrição.
 
-## site lega unsplah
+## site legal unsplah
 ## site para melhorar img tynypng.com
 
 ## Listas em Html
@@ -43,7 +43,7 @@ a tag #<meta >
 
  CSS --> Cria regras de estilo 
 
-- SELETORES elementos html 
+- SELETORES que são os elementos html 
 ```
 [seletores]
 a, p, h1,h3{
