@@ -65,24 +65,28 @@
     
     ```
 
-        //touch resumos/resumos-aula1.md
-        //ex:
-       //Podemos igonorar a pasta 
+      //touch resumos/resumos-aula1.md
+      //ex:
+      //Podemos igonorar a pasta 
 
           echo resumos/ > .gitignore
     
-         git status
+          git status
 
-    // PARA O GIT RECONHECEER PASTAS VAZIAS  - $ mkdir aulas
-   
-    touch aulas/.gitkeep
+    ```
+🔗 ### DESFAZENDO COISAS
 
-    git add .
+    ##  PARA O GIT RECONHECEER PASTAS VAZIAS  - $ mkdir aulas
+      // PARA O GIT RECONHECEER PASTAS VAZIAS  - $ mkdir aulas
 
-    git status
+    ```
+         touch aulas/.gitkeep
 
-    git commit -m"adiciona git igonere diretórios"
+         git add .
 
+        git status
+
+        git commit -m"adiciona git igonere diretórios"
 
 
     ```
@@ -99,103 +103,119 @@
     ```     
 
 
-
-
 ## Restaurando arquivos para nossa árvore
 
 Para retornar o estado de um arquivo.
 atenção...
 descarta todas as alterações feitas localmente.
 
+```
 git restore
 
+
 ## Alterando mensagem de commits
+```
 1 - git commit amend -m"novadescricao"
 ou
 2 - git commit --amend (vai abrir o editor VIM para você)
 
+```
 ## DESFAZER O COMMIT VOLTANDO PARA O COMMIT ANTERIOR
 
-git reset --soft [hash] 
-retorna os arquivos para a área de preparaçaõ 
-git status (mostra todos os arquivos que estavam no commit )
+```
+    git reset --soft [hash] 
+    retorna os arquivos para a área de preparaçaõ 
+    git status (mostra todos os arquivos que estavam no commit )
 
-git resete --mixed [hash] 
+    git resete --mixed [hash] 
 
-(comando padrão do reset) Pega os arquivos que estavam nos commits posteriores e volta para arvore
+  //(comando padrão do reset) 
+  //Pega os arquivos que estavam nos commits posteriores e volta para arvore
 
-git reset --hard [hash]
+    git reset --hard [hash]
+
+```
 
 Ignorou o arquivo que estavam no meu commit anterior e desfaz eles apaga os arquivos.
-
 comando detalhado 
 
-git reflog
+```
+   git reflog
 
+```
 # Para remover arquivos da area de preparação
-    git restore --staged nomearquivo
 
+```
+    git restore --staged nomearquivo
+```    
 
 # Enviando e baixando alterações do GitHub
-git add .
-git remote add origin URL
-git status 
-git log
-git commit -m"desccommit"
-git push -u origin main (-u abreviacao de upstrean)
+
+```
+    git add .
+    git remote add origin URL
+    git status 
+    git log
+    git commit -m"desccommit"
+    git push -u origin main (-u abreviacao de upstrean)
+
+```
 
 ## Após as alterções serem feitas no repositório remoto precisamos fazer um git pull no repo local para atualizar os arquivos
 
+```
+    // puxar as alterações realizadas atualizando meu repositório
+    git pull 
 
-git pull 
-(puxar as alterações realizadas atualizando meu repositório)
+```
+
 
 ## Trabalhando com Braches
 
 Braches são ramificações do projeto. 
 Criada uma brach incia-se uma nova brcah que aponta para o mesmo commit da brach de onde foi criada.
 
-
 ## Criando uma brach
 
-git log 
+```
+    git log 
 
-para ver a brach e o commit
-atual
+    //para ver a brach e o commit atual
 
-git checkout -B nome-brach
+    git checkout -B nome-brach
 
-## Voltar para a brech anterior
+    //Voltar para a brech anterior
 
-git checkout nome-brach
+    git checkout nome-brach
 
-## Listando as brachs
+    //Listando as brachs
 
-git brach -v
+    git brach -v
 
-## Mesclando as braches
+    //Mesclando as braches
 
-git merge nome-brech
+    git merge nome-brech
 
-## Após mesclar as breaches
+    //Após mesclar as breaches
 
-git brach -v
+    git brach -v
 
-git -d nome-brach-a-deletar
+    git -d nome-brach-a-deletar
 
-## Ver convensões de nomeação padrão de breches e commits
-
+    //Ver convensões de nomeação padrão de breches e commits
+```
 ## ALGUMAS SITUAÇÕES QUE POSSAM OCORRER
 
- - CONFLITOS DE MERGE
+ CONFLITOS DE MERGE
  Existem alterações no repositório remoto que ainda não estão no repositório local
 
+```
  git pull mostrará o conflito
 
- nos cabe decidir qual alteração permanece vigente.
+```
+ cabe a nós decidirmos qual alteração permanece vigente.
 
  
-
 ## AULA DE HTML5 E CSS
 
 # História
@@ -204,11 +224,12 @@ Tim Bearnes 1991. versão 1.
 
 Funcinamento do HTML
 
+```
 <!DOCTYPE html> não é elemento html diz ao navegador o que você esta escrevendo
 <head> contem meta-informações para o navegador e buscador de internet necessita
 
 a tag #<meta >
-```
+
 <head>
     <meta charset="utf-8">
     <title>Jose Americo<title>
@@ -244,7 +265,7 @@ a tag #<meta >
  CSS --> Cria regras de estilo 
 
 - SELETORES que são os elementos html 
-```
+
 [seletores]
 a, p, h1,h3{
     declarações ex: 
@@ -252,7 +273,7 @@ a, p, h1,h3{
     color:red;
 }
 
-```
+
 # ID X CLASSES
 
 No html 
@@ -361,9 +382,9 @@ No CSS
 
     ## O HTML5 foi criado para compartilhar textos.
 
-    - web safe fontes (já estão presentes nos dispositivos)
+    web safe fontes (já estão presentes nos dispositivos)
 
-    ```
+    
     #title{
         font-family:Verdana;
     }
@@ -395,13 +416,13 @@ No CSS
     }
     
     
-    ```
+    
 
     ## Estilizando Listas
 
     Existem listas ordenadas e não ordenadas
 
-    ```
+    
       ul{
             list-style-type:square;  -->LISTA NÃO ORDENADA ALTERANDO O SIMBOLO PARA QUADRADO
             list-style-type: none;
@@ -419,7 +440,7 @@ No CSS
 
         list-style-image: url("imagem.png");
     }
-    ```
+    
 
     Exercício
 
@@ -431,12 +452,12 @@ No CSS
     ex:
     contacts-list tem uma lista e tem o link
 
-    ```
+    
         .contacts-list li a {
             color: blue;
         }
     
-    ```
+    
 
     ## Dimensão e Alinhamentos
 
@@ -455,15 +476,16 @@ No CSS
 
     Delimitando o body em um valor menor que a imagem e a imagem vazar 
 
-    ```
+    
         .post_image{
          margin-bottom: 15px;
         width: 100%; --> a imagem respeitará o elemento que está de fora.
 }
     
-    ```
+    
 
 # Ineressante alinhar ao centro, porém cadas dispositivo tem telas de tamanhos diferentes então:
+
 body{
 
     margin:auto;
@@ -474,6 +496,7 @@ esse valor cria um espaçamento em ambos os lados.
 # ESTUDOS JAVASCRIPT
 
 ## Sintaxe Básica em JavaScript 
+
 (Diana Martini)
 
 Desenvolvedora Front-end
@@ -487,6 +510,7 @@ Desenvolvedora Front-end
       baixo nível --> próximo da linguagem de máquina bytecodes..
 
      ### História
+
      Em 1995 Brendan Eich que trabalhava na NetScape implementou uma linguagem chamada Moch, depois mudo o nome para LiveScript, mas na época a linguagem Java era muito popular então mudou para JavaScript como jogada de Marketing.
 
      HTML --> Estrutura
@@ -495,13 +519,13 @@ Desenvolvedora Front-end
      JavaScript --> Parte interativa
 
 # Ferramentas
-VsCode
-LiveServer
+    VsCode
+    LiveServer
 
 ## Boas Práticas
 
-Externar o arquivo JS.
-Colocar script no final antes do fechamento do body.
+    Externar o arquivo JS.
+    Colocar script no final antes do fechamento do body.
 
 ## Variáveis em JavaScript
 
@@ -514,39 +538,38 @@ Colocar script no final antes do fechamento do body.
 
 
 
- - O que são variáveis e como utiliza-las
+    O que são variáveis e como utiliza-las?
 
-  
-  var vouf = false;
-  console.log(vouf);
+    ```
+    var vouf = false;
+    console.log(vouf);
 
-  var numero =10;
-  console.log(numero);
-  console.log(TypeOf(numero))
-
-  abrindo o navegador na haba mains ferramentas podemos observar o resultado.
+    var numero =10;
+    console.log(numero);
+    console.log(TypeOf(numero))
+    
+    ```
+    //abrindo o navegador na haba mains ferramentas podemos observar o resultado.
     
     // Tipos Primitivos
 
-//Boolean recebem um valor v ou f
-var vouf = false;
-console.log(vouf)
+    //Boolean recebem um valor v ou f
+   
+    var vouf = false;
+    console.log(vouf)
 
-//Number
+    //Number
 
-var numero = 10;
-console.log(numero)
-console.log(typeof(numero)); //retorna o tipo de dados que a variável está armazenando.
+    var numero = 10;
+    console.log(numero)
+    console.log(typeof(numero)); //retorna o tipo de dados que a variável está armazenando.
 
-// String
+    // String
 
-var nome = "José";
-console.log(nome);
-console.log(typeof(nome))
+    var nome = "José";
+    console.log(nome);
+    console.log(typeof(nome))
 
-
-
-  
 
 - Operadores aritméticos
 # Extensões que vamos utilizar
@@ -562,11 +585,11 @@ let   --> escopo local de bloco por convensão.
 const --> escopo local de bloco valor inicial obrigatório e somente leitura.
 
 ## Declaração de variaveis.
-```
-    var variavel = 10;
-    let variavel1 = "joseamerico";
-    const variavel2 = "mxzh";
-```
+    ```
+        var variavel = 10;
+        let variavel1 = "joseamerico";
+        const variavel2 = "mxzh";
+    ```
 
 ### Escopos 
 
@@ -576,152 +599,227 @@ const --> escopo local de bloco valor inicial obrigatório e somente leitura.
 
  ## Boas Práticas
 
- Utilizar Camel Case ou utilizando underscore _
- Iniciar variáveis no início do escopo
+    Utilizar Camel Case ou utilizando underscore _
+    Iniciar variáveis no início do escopo
 
  # Atribuição
 
- =  -> em JavaScript não significa igualdade e sim atribuição
+    =  -> em JavaScript não significa igualdade e sim atribuição
 
  # Comparação
 
- == -> em JavaScript significa comparação entre valores
+    == -> em JavaScript significa comparação entre valores
 
  # Comparação Idêntica 
 
- === -> Compara o valor e o tipo da variável.
+    === -> Compara o valor e o tipo da variável.
 
  
-//Comparação
+## Comparação
 
 var comparacao = '0' ==0;
 console.log(comparacao); // --> retorna true ou false
 
-//Comparação Idêntica
+## Comparação Idêntica
 
 var comparacaoIdentica = '0' === 0;
 console.log(comparacaoIdentica); //-->retorna false poise compara o valor e o tipo.
 
-//Operadores aritméticos
+## Operadores aritméticos
 
 
-//Adição
+### Adição
 var adicao = 1+1;
 console.log(adicao);
 
-//Subtração
+### Subtração
 
 var subtracao = 1-1;
 console.log(subtracao);
 
-//Multiplicação
+### Multiplicação
 
 var multiplicacao = 1*1;
 console.log(multiplicacao);
 
-//Divisão
+### Divisão
 
 var divisaoReal = 1/1;
 console.log(divisaoReal);
 
-//Divisão inteira
+### Divisão inteira
 
 var divisaoInteira = 1%1;
 console.log(divisaoInteira);
 
-//Potênciação
+### Potênciação
 
 var potenciacao = 2**10;
 console.log(potenciacao);
 
 # Operadores Relacionais
-  ```
-  > maior que
-  < menor que
- >= maior igual que
- <= menor igual que 
- ```
-var maiorQue = 5 >2;
-console.log(maiorQue);
-
-var menorQue = 1 >2;
-console.log(menorQue);
-
-var maiorIgualA = 6>2;
-console.log(maiorIgualA);
-
-var menorIgualA = 6>2;
-console.log(menorIgualA);
-
-//Operadores Lógicos
-
-/*
-&& - e   - considera que todoso os valores sejam verdadeiros.
-|| - ou  - considera que qualquer valor seja verdadeiro.
-!  - não - inverte o valor de uma variável
-
-*/
-
-
-var e = true && false;
-console.log(e);
-
-var ou = true && false;
-console.log(ou);
-
-var nao = !true;
-console.log(nao);
-
-## Vetores||Arrays 
-
-Um tipo de lista ou matriz de variáveis pode ter vários tipos
-Uma caixa contendo várias caixas que contém valores 
-
-Array[`string`,1,true,false,array[1], `array[2]`...];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
+    > maior que
+    < menor que
+    >= maior igual que
+    <= menor igual que 
+ 
+```
+    var maiorQue = 5 >2;
+    console.log(maiorQue);
+
+    var menorQue = 1 >2;
+    console.log(menorQue);
+
+    var maiorIgualA = 6>2;
+    console.log(maiorIgualA);
+
+    var menorIgualA = 6>2;
+    console.log(menorIgualA);
+
+```
+
+### Operadores Lógicos
+
+
+    && - e   - considera que todoso os valores sejam verdadeiros.
+    || - ou  - considera que qualquer valor seja verdadeiro.
+    !  - não - inverte o valor de uma variável
+
+
+```
+
+    var e = true && false;
+    console.log(e);
+
+    var ou = true && false;
+    console.log(ou);
+
+    var nao = !true;
+    console.log(nao);
+
+```
+
+### Vetores ou Arrays 
+
+    Um tipo de lista ou matriz de variáveis pode ter vários tipos
+    Uma caixa contendo várias caixas que contém valores 
+
+    Array[`string`,1,true,false,array[1], `array[2]`...];
 
 
 
+### Como declarar um array
+    console.log("Um tipo de lista ou matriz de variáveis pode ter vários tipos"+
+    "É caixa contendo várias outras caixas que contém valores que podem ser de diversos tipos ")
+    console.log("Um array pode guardar vários tipos de dados:")
+
+    let array =['string',1,true];
+    console.log(array);
+
+### Em arrays podem ser armazenados diversos tipos de dados
+
+    let array1 =['string',1,true,['array1'],['array2'],['array3']];
+    console.log(array1);
+
+    console.log("Imprimindo uma posição específica do array:")
+    console.log(array1[3]);
+    
+### Métodos padrão de um array
+
+    Uma array possui uma serie de métodos
+
+    forEach()
+    array.forEach(function(item,indice){
+    console.log(item,indice);
+    })
+
+## push --> adiciona item no final do array
+
+    array.push('novo item')
+    console.log(array)
+
+    //podemos passar também um array
+    array.push([])
+    console.log(array)
+
+## array.pop -->remove ultimo item do array
+ 
+    array.pop();
+    console.log(array);
 
 
+## shift --> retira item do início do array
+
+    array.shift();
+    console.log(array);
+
+    //unShift --> adiciona item do início do array
+
+    array.unshift('novo item no inicio');
+    console.log(array);
+
+    console.log(array.indexOf(true))
+
+## splice() --> remove ou substitui item pelo índice
+
+    array.splice(0,3);
+
+    //slice() --> retorna uma parte de um array existente
+
+    let novoArray = array.slice(0,3);
+    console.log(novoArray);
+
+### Objetos
+
+ Dados que possuem propriedades e valores que definem suas caracteristicas
+ Exemplo xicara azul
+
+```
+    var xicara = {
+        cor:'azul',
+        tamanho:'p',
+        function:tomarCafe()
+
+    }
+```
+
+```
+    let object = {
+        string:'string',
+        number:1,
+        boolean:true,
+        array:['array'],
+        objectInterno:{
+            objectinterno:'Objeto Interno'
+        }
+    };
+
+console.log(object);
+
+```
 
 
+### retornando propriedades de um objeto objeto.propriedade
 
+```
+console.log(object.objectInterno.objectinterno)
 
+```
 
+### Desestruturação de objetos
 
+```
+    var string = object.string;
+    console.log(string);
+    var lista = object.array;
+    console.log(lista)
+```
 
+### Desestruturação outra maneira
 
+var {string, boolean,objectInterno} = object;
+console.log(string,boolean,objectInterno)
 
-
-
-
-
-
-
-
-
-
-
-
-[artigo dio]("https://web.dio.me/articles")
-[Diana Martini](https://github.com/DianaMartine/curso-dio-sintaxe-basica-javascript)
+    [artigo dio]("https://web.dio.me/articles")
+    [Diana Martini](https://github.com/DianaMartine/curso-dio-sintaxe-basica-javascript)
