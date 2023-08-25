@@ -1,78 +1,105 @@
-##✍️ REVISÃO DOS COMANDOS BÁSICOS DO GIT
 
-- GIT    --> Uma ferramenta de controle de versão de códigos open-source 
-
-- GitHub --> Um servidor de Hospedagem, em que utiliza-se o Git.
+   ✍️ REVISÃO DOS COMANDOS BÁSICOS DO GIT
 
 
+   ### Versionamento de códigos com git
 
-🔗 # **Tornando a pasta atual em repositório git**
-```
-    # Iniciando um repositório local como um repositório git
-         - git URL
+    GIT     Uma ferramenta de controle de versão de códigos open-source 
+
+    GitHub  Um servidor de Hospedagem, em que utiliza-se o Git.
+
+
+
+🔗  ### Tornando a pasta atual em repositório git
     
-    # Buscar URL do repositório no GitHub sem especificar a brach
-        - git remote add origin link
+    ```
 
-        - git remote v
+        // Iniciando um repositório local como um repositório git
+            git URL
+        
+        // Buscar URL do repositório no GitHub sem especificar a brach
+            
 
-```
+            git remote add origin link
 
-🔗 # **Clonando um repositório do git na pasta criada**
-```
-    # Clonando um repositório git
-         - git clone URL
-    # Clonar um repositório git, especificando a brach 
-        - git clone URL --branch nome-brach --single-brach
+            git remote v
+    ```
+    
 
-```
+🔗  ### Clonando um repositório do git na pasta criada**
 
-🔗 # **Salvando alterações em um repositório local**
-``` 
-   # Adicionando as alterações na árvore
+    ```
 
-   git add nome-file ou git add . 
+        // Clonando um repositório git
 
-   #Mostrando status da árvore de trabalho.
+            git clone URL
+
+        // Clonar um repositório git, especificando a brach 
+            git clone URL --branch nome-brach --single-brach
+
+    ```
+
+
+🔗 ### Salvando alterações em um repositório local
+    
+    ``` 
+        // Adicionando as alterações na árvore
+
+           git add nome-file ou git add . 
+
+        // Mostrando status da árvore de trabalho.
+    
+           git status 
+
+       // Salvando alterações em um commit passando a descrição.   
+    
+           git commit -m"desc-commit"
+
+       //Mostrar os estados em que se encontram os commits
+        
+           git log
+
+    ```
+
+🔗 ### Pastas vazias inserir ao menos um arquivo vazio dentro da pasta ou asicionar ao gitignore
+    
+    ```
+
+        //touch resumos/resumos-aula1.md
+        //ex:
+       //Podemos igonorar a pasta 
+
+          echo resumos/ > .gitignore
+    
+         git status
+
+    // PARA O GIT RECONHECEER PASTAS VAZIAS  - $ mkdir aulas
    
-   git status 
+    touch aulas/.gitkeep
 
-   git commit -m"desc-commit"
+    git add .
 
-   #Mostrar os commits
-   git log
+    git status
 
-  # PASTAS VAZIAS
-
-  inserir um arquivo vazio dentro da pasta
-
-  touch resumos/resumos-aula1.md
-  ex:
-  Podemos igonorar a pasta 
-
-  echo resumos/ > .gitignore
-  
-  git status
-
-   # GIT RECONHECEER PASTAS VAZIAS
-   touch aulas/.gitkeep
-
-   git add .
-
-   git status
-
-   git commit -m"adiciona git igonere diretórios"
+    git commit -m"adiciona git igonere diretórios"
 
 
 
-```
+    ```
 
-## DESFAZENDO COISAS
+🔗 ### DESFAZENDO COISAS
 
-Para fazer com que o repositório iniciado com git deixe de ser um repo git
+## Para fazer com que o repositório iniciado com git deixe de ser um repo git
 
-rm -rf .git 
-(remove recursivamente a força) o diretório git 
+    ```
+    //git remova recursivamente a força o diretório .git 
+
+    rm -rf .git 
+
+    ```     
+
+
+
 
 ## Restaurando arquivos para nossa árvore
 
@@ -168,6 +195,520 @@ git -d nome-brach-a-deletar
  nos cabe decidir qual alteração permanece vigente.
 
  
+
+## AULA DE HTML5 E CSS
+
+# História
+
+Tim Bearnes 1991. versão 1.
+
+Funcinamento do HTML
+
+<!DOCTYPE html> não é elemento html diz ao navegador o que você esta escrevendo
+<head> contem meta-informações para o navegador e buscador de internet necessita
+
+a tag #<meta >
+```
+<head>
+    <meta charset="utf-8">
+    <title>Jose Americo<title>
+</head>
+
+```
+
+## SEMANTICA HTML
+
+<section> --> representa uma seção generica lista
+<header>  --> cabeçalho de uma <section>
+<article> --> artigo de um ex blog
+<aside>   --> representa um conteúdo relacionado ao conteúdo principal da página biografi de autor etc..
+<footer>  --> rodapé da página ou parte da página de um <article> ou <section> ...
+<a href>  --> hiperlink pode ser uma página no site ou site externo
+<a target="_blank">--> Indica como o link vai ser aberto _blank em nova haba
+
+# Inserindo imagens no html
+
+<img src="" alt=""> alt="descrição" o alt é altamente recomendado quando a foto não carregar vai aparecer a descrição.
+
+## site legal unsplah
+## site para melhorar img tynypng.com
+
+## Listas em Html
+<ul> -->lista em que ordem não importa
+<ol> -->Ordem são extremamente importantes
+<li> -->Item da lista
+
+
+# Conceitos básicos CSS
+
+ CSS --> Cria regras de estilo 
+
+- SELETORES que são os elementos html 
+```
+[seletores]
+a, p, h1,h3{
+    declarações ex: 
+    [propriedade : valor;] ===> declarações
+    color:red;
+}
+
+```
+# ID X CLASSES
+
+No html 
+
+```
+    <header id="headers" class="headers"></header>
+
+```
+
+No CSS 
+
+```
+  #header --> representa id
+  
+    #header{
+        padding:15px;
+
+    }
+
+ .header --> representa classes
+
+    .header{
+        padding:15px;
+    }
+
+```
+
+
+### OS ID(S) SÓ PODEM SER USADOS 1 VEZ NA PÁGINA 
+### ENQUANTO A CLASSE VÁRIAS VEZES
+
+
+ 📘[Material](https://web.dio.me/course/introducao-criacao-de-websites-com-html5-e-css3/learning/b9735f52-8518-49e1-b294-1d40caeeff43?back=/track/santander-bootcamp-2023-fullstack-java-angular&tab=undefined&moduleId=undefined)
+
+ ### Padding e Margin
+ 
+ 
+ ```
+
+  .class{           
+                 eixo y  esquerdo direito
+        padding: 10px           5px
+
+                topo direita   inferior  esque
+        padding: 10px     15px    5px     0;
+  }
+
+ # image com CSS
+  .class{
+    bakground-image:url("img/");
+  }
+ 
+ ```
+
+ # mdn para estudar
+
+  - boras solid | drashed | dotted
+
+ - Como separar a estilização de cada lado
+
+    top right botton left
+    ```
+    .post{
+        border-top: solid 1px green;
+        border-right: dotted 3px yellow;
+        border-botton: drashed 4px pink;
+        border-left: dotted 2px red;
+
+        ou 
+
+        border: 3px solid #44444;
+        
+        ou 
+
+        border-with:3px;
+        border-color:pink;
+        border-style:drashed;
+    }
+
+    # Mais específicos
+
+        .post{
+            border-top-right: 3px;
+            border-top-color:#34333;
+            border-top-style:drashed;    
+
+
+        }
+    # Border radius    
+
+        .post{
+            border-radius:10px;      --> quando definimos um valor todos os cantos.
+            border-radius:50%;       --> Para tornar um círculo colocar 50%;
+            border-radius:10% 20%;
+            border-radius:10% 20% 15% 22%; 
+        }
+
+    ```
+    ## Exercício
+
+    Alinhar espaçamentos 
+    texto com conteúdo 
+    espaçamentos
+
+    # zerar margin sempre na mesma direção é uma boa prática
+
+    ## O HTML5 foi criado para compartilhar textos.
+
+    - web safe fontes (já estão presentes nos dispositivos)
+
+    ```
+    #title{
+        font-family:Verdana;
+    }
+
+    .post-title{
+        duas fontes, caso uma não funcione a segunda entra como beckup.
+        font-family: Verdana, Arial;
+        font-size:15px; --> altera tamanho das fontes;
+        font-style: normal;
+        font-style: italic; 
+        
+        -->Observação: Verificar se a fonte tem suporte a itálico para o navegador não destorcer e ficar feio.
+
+        font-weight:normal; --> altera o peso do texto;
+        font-weight: bold; -->negrito;
+
+        text-transform: upercase; --> transorma o texto entre maiusculo em minusculo.
+        text-transform: lowercase; 
+        
+        --> o valor uppercase (maiusculo) 
+        --> o valor lowercase (minusculo)
+        --> o valor captalize (primeiras letras de cada palavra em maiusculo)
+
+        text-decoration: underline;    --> linha abaixo da palavra
+        text-decoration: overline;     --> linha acima da palavra
+        text-decoration: line-thought; --> linha ao centro cortando a palavra 
+
+
+    }
+    
+    
+    ```
+
+    ## Estilizando Listas
+
+    Existem listas ordenadas e não ordenadas
+
+    ```
+      ul{
+            list-style-type:square;  -->LISTA NÃO ORDENADA ALTERANDO O SIMBOLO PARA QUADRADO
+            list-style-type: none;
+        } 
+     
+     ol{
+         list-style-type:upper-roman; -->LISTA ORDENADA ALTERANDO MARCADOR DA LISTA PARA ALGARISMO ROMANO
+
+       }
+     ul{
+        list-style-type:"\1F44D"; -->LISTA NÃO ORDENADA ALTERANDO MARCADOR PARA UM SIMBOLO.
+       }
+
+    ul{
+
+        list-style-image: url("imagem.png");
+    }
+    ```
+
+    Exercício
+
+    alterando propriedades
+
+    O site funciona como uma cascata
+
+    podemos seguir o fluxo
+    ex:
+    contacts-list tem uma lista e tem o link
+
+    ```
+        .contacts-list li a {
+            color: blue;
+        }
+    
+    ```
+
+    ## Dimensão e Alinhamentos
+
+    width
+    height
+
+
+    - Max-height
+    - Max-width
+    - Margin
+    - Text-align
+
+    ## Exercício
+
+    Delimitar as dimensões dos nossos elementos e alinhar nosso conteúdo.
+
+    Delimitando o body em um valor menor que a imagem e a imagem vazar 
+
+    ```
+        .post_image{
+         margin-bottom: 15px;
+        width: 100%; --> a imagem respeitará o elemento que está de fora.
+}
+    
+    ```
+
+# Ineressante alinhar ao centro, porém cadas dispositivo tem telas de tamanhos diferentes então:
+body{
+
+    margin:auto;
+}
+
+esse valor cria um espaçamento em ambos os lados.
+
+# ESTUDOS JAVASCRIPT
+
+## Sintaxe Básica em JavaScript 
+(Diana Martini)
+
+Desenvolvedora Front-end
+[Diana Martini](https://github.com/dianamartine)
+
+## O que é JavaScript 
+
+     É uma linguagem de programação de alto nível que integram apps e páginas web.
+      Uma das linguagens mais utilizadas no mundo do desenvolvimento.
+      alto nível  --> próximo a linguagem humana
+      baixo nível --> próximo da linguagem de máquina bytecodes..
+
+     ### História
+     Em 1995 Brendan Eich que trabalhava na NetScape implementou uma linguagem chamada Moch, depois mudo o nome para LiveScript, mas na época a linguagem Java era muito popular então mudou para JavaScript como jogada de Marketing.
+
+     HTML --> Estrutura
+     CSS  --> Design
+
+     JavaScript --> Parte interativa
+
+# Ferramentas
+VsCode
+LiveServer
+
+## Boas Práticas
+
+Externar o arquivo JS.
+Colocar script no final antes do fechamento do body.
+
+## Variáveis em JavaScript
+
+    Funcionamento das tipagens
+    Funciona como regras de tipos de dados
+    em JavasScript a tipagem é fraca, converte (funciona dinamicamente).
+    Variáveis pode guardard dados de vários tipos.
+
+    booleanos, null, undefined, number, string, inteiros,arrays, objetos e funcões.
+
+
+
+ - O que são variáveis e como utiliza-las
+
+  
+  var vouf = false;
+  console.log(vouf);
+
+  var numero =10;
+  console.log(numero);
+  console.log(TypeOf(numero))
+
+  abrindo o navegador na haba mains ferramentas podemos observar o resultado.
+    
+    // Tipos Primitivos
+
+//Boolean recebem um valor v ou f
+var vouf = false;
+console.log(vouf)
+
+//Number
+
+var numero = 10;
+console.log(numero)
+console.log(typeof(numero)); //retorna o tipo de dados que a variável está armazenando.
+
+// String
+
+var nome = "José";
+console.log(nome);
+console.log(typeof(nome))
+
+
+
+  
+
+- Operadores aritméticos
+# Extensões que vamos utilizar
+
+### Exemplo da caixa imagine que a variável é uma caixa que armazena valores.
+
+como armazenar variáves (tres modos)
+
+var   --> genérica escopo local e global
+
+let   --> escopo local de bloco por convensão.
+
+const --> escopo local de bloco valor inicial obrigatório e somente leitura.
+
+## Declaração de variaveis.
+```
+    var variavel = 10;
+    let variavel1 = "joseamerico";
+    const variavel2 = "mxzh";
+```
+
+### Escopos 
+
+ - global --> a variável é declarada fora do bloco e fica disponivel em todo o código.
+
+ - local  --> a variável é declarada dentro de um bloco de código
+
+ ## Boas Práticas
+
+ Utilizar Camel Case ou utilizando underscore _
+ Iniciar variáveis no início do escopo
+
+ # Atribuição
+
+ =  -> em JavaScript não significa igualdade e sim atribuição
+
+ # Comparação
+
+ == -> em JavaScript significa comparação entre valores
+
+ # Comparação Idêntica 
+
+ === -> Compara o valor e o tipo da variável.
+
+ 
+//Comparação
+
+var comparacao = '0' ==0;
+console.log(comparacao); // --> retorna true ou false
+
+//Comparação Idêntica
+
+var comparacaoIdentica = '0' === 0;
+console.log(comparacaoIdentica); //-->retorna false poise compara o valor e o tipo.
+
+//Operadores aritméticos
+
+
+//Adição
+var adicao = 1+1;
+console.log(adicao);
+
+//Subtração
+
+var subtracao = 1-1;
+console.log(subtracao);
+
+//Multiplicação
+
+var multiplicacao = 1*1;
+console.log(multiplicacao);
+
+//Divisão
+
+var divisaoReal = 1/1;
+console.log(divisaoReal);
+
+//Divisão inteira
+
+var divisaoInteira = 1%1;
+console.log(divisaoInteira);
+
+//Potênciação
+
+var potenciacao = 2**10;
+console.log(potenciacao);
+
+# Operadores Relacionais
+  ```
+  > maior que
+  < menor que
+ >= maior igual que
+ <= menor igual que 
+ ```
+var maiorQue = 5 >2;
+console.log(maiorQue);
+
+var menorQue = 1 >2;
+console.log(menorQue);
+
+var maiorIgualA = 6>2;
+console.log(maiorIgualA);
+
+var menorIgualA = 6>2;
+console.log(menorIgualA);
+
+//Operadores Lógicos
+
+/*
+&& - e   - considera que todoso os valores sejam verdadeiros.
+|| - ou  - considera que qualquer valor seja verdadeiro.
+!  - não - inverte o valor de uma variável
+
+*/
+
+
+var e = true && false;
+console.log(e);
+
+var ou = true && false;
+console.log(ou);
+
+var nao = !true;
+console.log(nao);
+
+## Vetores||Arrays 
+
+Um tipo de lista ou matriz de variáveis pode ter vários tipos
+Uma caixa contendo várias caixas que contém valores 
+
+Array[`string`,1,true,false,array[1], `array[2]`...];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
