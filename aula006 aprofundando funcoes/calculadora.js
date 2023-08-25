@@ -95,9 +95,21 @@ function calculadora() {
         */
 
         switch (operacao) {
-            case 1: 
-            soma();
-            break;
+            case 1: soma();
+                break;
+
+            case 2: subtracao();
+                break;
+
+            case 3: multiplicacao();
+                break;
+            case 4: divisaoReal();
+                break;
+            case 5: divisaoInteira();
+                break;
+            case 6: potenciacao();
+                break;
+            default: alert("Opção inválida!");
         }
 
 

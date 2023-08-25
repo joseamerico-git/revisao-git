@@ -823,3 +823,29 @@ console.log(string,boolean,objectInterno)
 
     [artigo dio]("https://web.dio.me/articles")
     [Diana Martini](https://github.com/DianaMartine/curso-dio-sintaxe-basica-javascript)
+
+
+# Resumo para avaliação
+
+### O que são vetore são tipos de listas onde cada variável possui um índice e um valores
+
+Exemplos: Caixas com várias caixas e onde cada caixa possui um valor
+Criação de uma variável do tipo array
+
+let nome_array = ['string',1,true];
+
+## Os arrays devem ser declarado entre colchetes [] e podem guardar qualquer valor dentro de seus índeices
+
+
+# DECLARAÇÃO DE ARRAYS
+
+```
+let array = ['string',1,true];
+console.log(array);
+
+let array1 = ['string', 1,true,['array1'],['array2'],['array3']];
+console.log(array);
+
+```
+
+## Acessando um índice de um array
