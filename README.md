@@ -818,16 +818,17 @@ console.log(object.objectInterno.objectinterno)
 
 ### Desestruturação outra maneira
 
-var {string, boolean,objectInterno} = object;
-console.log(string,boolean,objectInterno)
+```
+    var {string, boolean,objectInterno} = object;
+    console.log(string,boolean,objectInterno)
 
-    [artigo dio]("https://web.dio.me/articles")
-    [Diana Martini](https://github.com/DianaMartine/curso-dio-sintaxe-basica-javascript)
+```   
 
 
-# Resumo para avaliação
+# Resumo para avaliação ********************************************
 
-### O que são vetore são tipos de listas onde cada variável possui um índice e um valores
+# O que são vetore são tipos de listas onde cada variável possui um índice e um valores
+
 
 Exemplos: Caixas com várias caixas e onde cada caixa possui um valor
 Criação de uma variável do tipo array
@@ -839,13 +840,30 @@ let nome_array = ['string',1,true];
 
 # DECLARAÇÃO DE ARRAYS
 
-```
+
 let array = ['string',1,true];
 console.log(array);
 
 let array1 = ['string', 1,true,['array1'],['array2'],['array3']];
 console.log(array);
 
-```
+
 
 ## Acessando um índice de um array
+
+console.log(array[2]);
+
+## Métodos padrão para manipulação de um array
+
+- forEach -> itera em um array
+- push    -> insere item no final do array
+- pop     -> remove item do final do array
+- shift   -> remove item do início do array
+- unshift -> adiciona item no início do array
+- indexOf -> retorna o índice de um valor
+
+
+
+
+[artigo dio]("https://web.dio.me/articles")
+[Diana Martini](https://github.com/DianaMartine/curso-dio-sintaxe-basica-javascript)
