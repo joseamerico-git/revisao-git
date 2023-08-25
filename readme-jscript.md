@@ -197,6 +197,14 @@ console.log(ou);
 var nao = !true;
 console.log(nao);
 
+## Vetores||Arrays 
+
+Um tipo de lista ou matriz de variáveis pode ter vários tipos
+Uma caixa contendo várias caixas que contém valores 
+
+Array[`string`,1,true,false,array[1], `array[2]`...];
+
+
 
 
 

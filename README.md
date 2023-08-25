@@ -182,3 +182,5 @@ git -d nome-brach-a-deletar
 
 
 
+[artigo dio]("https://web.dio.me/articles")
+[Diana Martini](https://github.com/DianaMartine/curso-dio-sintaxe-basica-javascript)
