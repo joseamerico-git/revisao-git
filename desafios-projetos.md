@@ -1,7 +1,7 @@
 ## DESAFIO DE PROJTEOS
 Criando um portifolio
 
-![image]("./imagem1.webp")
+
 
 
 ## Hard Skills
