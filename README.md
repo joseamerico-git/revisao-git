@@ -1,8 +1,8 @@
 
-   ✍️ REVISÃO DOS COMANDOS BÁSICOS DO GIT
+✍️ REVISÃO DOS COMANDOS BÁSICOS DO GIT
 
 
-   ### Versionamento de códigos com git
+🔗###  Versionamento de códigos com git 
 
     GIT     Uma ferramenta de controle de versão de códigos open-source 
 
